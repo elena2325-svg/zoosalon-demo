@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты и запись | Зоосалон Грумлав, СПб</title>
+  <meta name="description" content="Адреса зоосалона Грумлав в Санкт-Петербурге: [адрес салона №1] и [адрес салона №2]. Телефон [телефон]. Онлайн-запись на груминг.">
+  <link rel="icon" href="img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo"><img src="img/logo.jpg" alt="Логотип Грумлав"><span>Грумлав<small>зоосалон · СПб</small></span></a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="uslugi.html">Услуги и цены</a>
+      <a href="raboty.html">Наши работы</a>
+      <a href="kontakty.html" class="active">Контакты</a>
+    </nav>
+    <span class="header__phone">[телефон]</span>
+    <a href="kontakty.html#zapis" class="btn btn--primary">Записаться</a>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Главная</a> / Контакты</div>
+      <h1>Контакты и запись</h1>
+      <p>Два салона в Санкт-Петербурге. Записывайтесь онлайн в удобный салон или звоните, поможем подобрать услугу и мастера.</p>
+    </div>
+  </section>
+
+  <section class="section" id="salony">
+    <div class="container contacts">
+      <div class="card contact-card reveal">
+        <span class="eyebrow">Салон №1</span>
+        <h3>[адрес салона №1]</h3>
+        <dl>
+          <div><dt>Адрес</dt><dd>Санкт-Петербург, [адрес салона №1]</dd></div>
+          <div><dt>Телефон</dt><dd><a href="kontakty.html#zapis">[телефон]</a></dd></div>
+          <div><dt>Telegram</dt><dd><a href="kontakty.html#zapis" target="_blank" rel="noopener">[Telegram]</a></dd></div>
+          <div><dt>Режим работы</dt><dd>до 20:00, по записи</dd></div>
+        </dl>
+        <div class="btns">
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener" class="btn btn--primary">Записаться онлайн</a>
+          <a href="kontakty.html#salony" target="_blank" rel="noopener" class="btn btn--ghost">Как добраться</a>
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener" class="btn btn--tg">Оставить заявку</a>
+        </div>
+        <div class="map map--placeholder">[карта салона]</div>
+      </div>
+
+      <div class="card contact-card reveal">
+        <span class="eyebrow">Салон №2</span>
+        <h3>[адрес салона №2]</h3>
+        <dl>
+          <div><dt>Адрес</dt><dd>Санкт-Петербург, [адрес салона №2]</dd></div>
+          <div><dt>Телефон</dt><dd><a href="kontakty.html#zapis">[телефон]</a></dd></div>
+          <div><dt>Telegram</dt><dd><a href="kontakty.html#zapis" target="_blank" rel="noopener">[Telegram]</a></dd></div>
+          <div><dt>Режим работы</dt><dd>до 20:00, по записи</dd></div>
+        </dl>
+        <div class="btns">
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener" class="btn btn--primary">Записаться онлайн</a>
+          <a href="kontakty.html#salony" target="_blank" rel="noopener" class="btn btn--ghost">Как добраться</a>
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener" class="btn btn--tg">Оставить заявку</a>
+        </div>
+        <div class="map map--placeholder">[карта салона]</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="zapis">
+    <div class="container booking">
+      <div class="booking__info reveal">
+        <span class="eyebrow">Запись</span>
+        <h2>Оставьте заявку на груминг</h2>
+        <p>Заполните форму и нажмите «Скопировать заявку». Текст заявки будет скопирован. Его можно вставить в удобный мессенджер или отправить позже.</p>
+        <img src="img/p17.jpg" alt="Мальтипу до и после стрижки">
+      </div>
+      <form class="card form reveal" id="booking" novalidate>
+        <div class="form__row">
+          <label>Ваше имя<input id="f-name" name="name" required placeholder="[Имя]"></label>
+          <label>Телефон<input id="f-phone" name="phone" type="tel" required placeholder="+7 (___) ___-__-__"></label>
+        </div>
+        <div class="form__row">
+          <label>Салон
+            <select id="f-salon" name="salon">
+              <option>[адрес салона №1]</option>
+              <option>[адрес салона №2]</option>
+            </select>
+          </label>
+          <label>Услуга
+            <select id="f-service" name="service">
+              <option>Комплекс со стрижкой</option>
+              <option>Гигиена</option>
+              <option>Экспресс-линька</option>
+              <option>Груминг кошки</option>
+              <option>Ультразвуковая чистка зубов</option>
+              <option>Не знаю, нужна консультация</option>
+            </select>
+          </label>
+        </div>
+        <div class="form__row">
+          <label>Питомец<input id="f-pet" name="pet" required placeholder="[Питомец]"></label>
+          <label>Удобные дата и время<input id="f-time" name="time" placeholder="Суббота, после 12:00"></label>
+        </div>
+        <label>Комментарий<textarea id="f-comment" name="comment" rows="3" placeholder="Пожелания к стрижке, особенности характера или здоровья"></textarea></label>
+        <p class="form__error" hidden>Заполните имя, телефон и питомца.</p>
+        <button type="submit" class="btn btn--tg">Скопировать заявку</button>
+        <div class="form__ok" hidden>
+          <b>Текст заявки скопирован.</b> Вставьте текст в удобный мессенджер и отправьте.
+          <textarea id="f-result" rows="7" readonly></textarea>
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener">[контакт для отправки]</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Перед визитом</span>
+        <h2>Как подготовить питомца</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal"><div class="feature__icon">🚶</div><h3>Прогуляйтесь</h3><p>Выгуляйте собаку перед визитом, так ей будет спокойнее на столе у мастера.</p></div>
+        <div class="card reveal"><div class="feature__icon">🍽️</div><h3>Не кормите плотно</h3><p>Лучше покормить питомца за 2–3 часа до груминга.</p></div>
+        <div class="card reveal"><div class="feature__icon">💬</div><h3>Расскажите о питомце</h3><p>Предупредите мастера об особенностях характера, здоровья и о пожеланиях к стрижке.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+        <div>
+          <h3>Мы в соцсетях</h3>
+          <p>Новые работы, акции и мастер-классы в нашем сообществе. Руководитель салона: [Имя основателя].</p>
+        </div>
+        <div class="socials">
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener" class="btn btn--tg">Telegram</a>
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener" class="btn btn--primary">[ВКонтакте]</a>
+          <a href="kontakty.html#zapis" target="_blank" rel="noopener" class="btn btn--ghost">[Отзывы]</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="logo"><img src="img/logo.jpg" alt=""><span>Грумлав<small>зоосалон · СПб</small></span></a>
+        <p style="margin-top:16px;font-size:15px">Груминг собак и кошек с любовью. Ведущие мастера, профессиональная косметика, бережный подход.</p>
+      </div>
+      <div><h4>Страницы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги и цены</a></li><li><a href="raboty.html">Наши работы</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+      <div><h4>Салоны</h4><ul><li>[адрес салона №1]</li><li>[адрес салона №2]</li><li>Санкт-Петербург</li></ul></div>
+      <div><h4>Связь</h4><ul><li>[телефон]</li><li>[Telegram]</li><li>[ВКонтакте]</li><li>[Яндекс Карты]</li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Зоосалон «Грумлав»</span><span>Сделано с ♥ к животным</span></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
