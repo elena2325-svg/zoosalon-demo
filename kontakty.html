@@ -111,7 +111,12 @@
           <label>Удобные дата и время<input id="f-time" name="time" placeholder="Суббота, после 12:00"></label>
         </div>
         <label>Комментарий<textarea id="f-comment" name="comment" rows="3" placeholder="Пожелания к стрижке, особенности характера или здоровья"></textarea></label>
+        <label class="form__consent">
+          <input type="checkbox" id="f-consent" name="consent" required>
+          <span>Я согласен(на) на обработку моих персональных данных (имя, телефон) в соответствии с <a href="politika.html">Политикой конфиденциальности</a></span>
+        </label>
         <p class="form__error" hidden>Заполните имя, телефон и питомца.</p>
+        <p class="form__error form__error--consent" hidden>Отметьте согласие на обработку персональных данных.</p>
         <button type="submit" class="btn btn--tg">Скопировать заявку</button>
         <div class="form__ok" hidden>
           <b>Текст заявки скопирован.</b> Вставьте текст в удобный мессенджер и отправьте.
@@ -164,7 +169,7 @@
       <div><h4>Салоны</h4><ul><li>[адрес салона №1]</li><li>[адрес салона №2]</li><li>Санкт-Петербург</li></ul></div>
       <div><h4>Связь</h4><ul><li>[телефон]</li><li>[Telegram]</li><li>[ВКонтакте]</li><li>[Яндекс Карты]</li></ul></div>
     </div>
-    <div class="footer__bottom"><span>© 2026 Зоосалон «Грумлав»</span><span>Сделано с ♥ к животным</span></div>
+    <div class="footer__bottom"><span>© 2026 Зоосалон «Грумлав»</span><span><a href="politika.html">Политика конфиденциальности</a></span><span>Сделано с ♥ к животным</span></div>
   </div>
 </footer>
 

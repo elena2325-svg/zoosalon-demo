@@ -274,6 +274,9 @@ h3 { font-size: 21px; margin-bottom: 8px; }
 .form textarea { resize: vertical; }
 .form .btn { justify-self: start; }
 .form__error { color: var(--accent); font-weight: 700; font-size: 15px; }
+.form .form__consent { display: flex; flex-direction: row; align-items: flex-start; gap: 10px; font-weight: 400; font-size: 14px; line-height: 1.5; color: var(--muted); cursor: pointer; }
+.form .form__consent input { width: auto; margin-top: 3px; accent-color: var(--accent); cursor: pointer; }
+.form .form__consent a { text-decoration: underline; font-weight: 600; }
 .form__ok { display: grid; gap: 10px; background: #e6f6ea; color: #1d6b35; padding: 16px 18px; border-radius: 14px; font-size: 15px; }
 .form__ok textarea { font-size: 14px; color: var(--text); }
 .form__ok a { text-decoration: underline; font-weight: 700; }

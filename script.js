@@ -40,11 +40,17 @@ document.querySelector('#booking')?.addEventListener('submit', (e) => {
   const form = e.target;
   const d = new FormData(form);
   const error = form.querySelector('.form__error');
+  const errorConsent = form.querySelector('.form__error--consent');
   if (!d.get('name').trim() || !d.get('phone').trim() || !d.get('pet').trim()) {
     error.hidden = false;
     return;
   }
   error.hidden = true;
+  if (!form.querySelector('#f-consent').checked) {
+    errorConsent.hidden = false;
+    return;
+  }
+  errorConsent.hidden = true;
   const text = [
     'Здравствуйте! Хочу записаться на груминг.',
     `Имя: ${d.get('name')}`,
